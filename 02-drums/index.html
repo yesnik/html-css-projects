@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drums</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+</head>
+<body>
+    <h1>Drums</h1>
+
+    <ul id="js-drums" class="drums">
+        <li data-key="KeyA">
+            Boom<span>A<span>
+        </li>
+        <li data-key="KeyS">
+            Clap<span>S</span>
+        </li>
+        <li data-key="KeyD">
+            Hihat<span>D</span>
+        </li>
+        <li data-key="KeyF">
+            Kick<span>F</span>
+        </li>
+        <li data-key="KeyJ">
+            Openhat<span>J</span>
+        </li>
+        <li data-key="KeyK">
+            Ride<span>K</span>
+        </li>
+        <li data-key="KeyL">
+            Snare<span>L</span>
+        </li>
+        <li data-key="Semicolon">
+            Tink<span>;</span>
+        </li>
+    </ul>
+
+    <audio src="audio/boom.wav" data-key="KeyA"></audio>
+    <audio src="audio/clap.wav" data-key="KeyS"></audio>
+    <audio src="audio/hihat.wav" data-key="KeyD"></audio>
+    <audio src="audio/kick.wav" data-key="KeyF"></audio>
+
+    <audio src="audio/openhat.wav" data-key="KeyJ"></audio>
+    <audio src="audio/ride.wav" data-key="KeyK"></audio>
+    <audio src="audio/snare.wav" data-key="KeyL"></audio>
+    <audio src="audio/tink.wav" data-key="Semicolon"></audio>
+
+    <script type="text/javascript" src="script.js" />
+</body>
+</html>
