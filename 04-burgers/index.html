@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burgers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header-top">
+      <div class="container">
+        <div class="header-wrapper">
+          <button class="burger-menu" onclick="openModal()"></button>
+          <div class="logo">
+            <div class="logo-pic"></div>
+            <div class="logo-text">Burgers</div>
+          </div>
+          <nav class="nav">
+            <a href="#" class="nav-link">Main</a>
+            <a href="#" class="nav-link">Menu</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contacts</a>
+          </nav>
+          <a href="#" class="cart">
+            <span class="cart-sum">$100</span>
+            <span class="cart-count">2</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a href="#" class="breadcrumbs-link">Main</a>
+          </li>
+          <li class="breadcrumbs-item">Menu</li>
+        </ul>
+        <h1 class="hero-title">Welcome</h1>
+        <p class="hero-description">
+          Choose anything you want. <br />We cook all dishes with love
+        </p>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner-wrapper">
+          <h2 class="banner-title"><span>Discount</span>-15%</h2>
+          <p class="banner-description">
+            Buy 3 items and get 10% discount,<br />
+            buy 5 or more items and get 15% discount!
+          </p>
+          <a href="#menu-burger" class="banner-btn">Buy now</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="menu-burger">
+        <div class="container">
+          <div class="menu">
+            <div class="menu-header">
+              <h2 class="menu-title">Burgers</h2>
+              <select name="sort" class="menu-select">
+                <option value="1">Sort by Price &uarr;</option>
+                <option value="2">Sort by Price &darr;</option>
+              </select>
+            </div>
+            <div class="menu-box">
+              <div class="menu-item">
+                <div class="menu-thumb">
+                  <img src="images/menu/big-burger.webp" alt="" />
+                </div>
+                <h3 class="menu-name">Big burger</h3>
+                <p class="menu-price">$17</p>
+                <button type="button" class="menu-btn">Buy</button>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-thumb">
+                  <img src="images/menu/tasty-burger.jpg" alt="" />
+                </div>
+                <h3 class="menu-name">Tasty burger</h3>
+                <p class="menu-price">$16</p>
+                <button type="button" class="menu-btn">Buy</button>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-thumb">
+                  <img src="images/menu/dark-burger.avif" alt="" />
+                </div>
+                <h3 class="menu-name">Dark burger</h3>
+                <p class="menu-price">$22</p>
+                <button type="button" class="menu-btn">Buy</button>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-thumb">
+                  <img src="images/menu/chicken-burger.webp" alt="" />
+                </div>
+                <h3 class="menu-name">Burger with chicken</h3>
+                <p class="menu-price">$13</p>
+                <button type="button" class="menu-btn">Buy</button>
+              </div>
+              <div class="menu-item">
+                <div class="menu-thumb">
+                  <img src="images/menu/grilled-beef-burger.avif" alt="" />
+                </div>
+                <h3 class="menu-name">Grilled beef burger</h3>
+                <p class="menu-price">$9</p>
+                <button type="button" class="menu-btn">Buy</button>
+              </div>
+              <div class="menu-item">
+                <div class="menu-thumb">
+                  <img src="images/menu/double-burger.jpg" alt="" />
+                </div>
+                <h3 class="menu-name">Double burger</h3>
+                <p class="menu-price">$25</p>
+                <button type="button" class="menu-btn">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="menu">
+            <div class="menu-header">
+              <h2 class="menu-title">Additionally</h2>
+            </div>
+            <div class="menu-box _additionally">
+              <div class="menu-item _additionally">
+                <div class="menu-thumb">
+                  <img src="images/menu/soup.jpg" alt="" />
+                </div>
+                <div class="menu-info">
+                  <h3 class="menu-name">Soup</h3>
+                  <p class="menu-price">$5</p>
+                  <button type="button" class="menu-btn">Buy</button>
+                </div>
+              </div>
+
+              <div class="menu-item _additionally">
+                <div class="menu-thumb">
+                  <img src="images/menu/french-fries.avif" alt="" />
+                </div>
+                <div class="menu-info">
+                  <h3 class="menu-name">French Fries</h3>
+                  <p class="menu-price">$5</p>
+                  <button type="button" class="menu-btn">Buy</button>
+                </div>
+              </div>
+
+              <div class="menu-item _additionally">
+                <div class="menu-thumb">
+                  <img src="images/menu/salad-caesar.webp" alt="" />
+                </div>
+                <div class="menu-info">
+                  <h3 class="menu-name">Salad Caesar</h3>
+                  <p class="menu-price">$9</p>
+                  <button type="button" class="menu-btn">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <a href="#" class="footer-logo">&nbsp;</a>
+
+          <div class="footer-item">
+            <h3 class="footer-title">Main links</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-link">Menu</a>
+              <a href="#" class="footer-link">Delivery</a>
+              <a href="#" class="footer-link">Payment methods</a>
+              <a href="contact.html" class="footer-link">Contacts</a>
+            </nav>
+
+            <a class="footer-tel _mobile" href="tel:+79007882200"
+              >+ 7 900 788 22 00</a
+            >
+            <a class="footer-tel _mobile" href="tel:+79007882205"
+              >+ 7 900 788 22 05</a
+            >
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-title">Primary information</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <span>Open</span>
+                Mon - Sun<br />
+                12:00 - 23:00
+              </li>
+              <li class="footer-list-item">
+                <span>Address</span>
+                440 East 26th Street. New York, NY 10010
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <a class="footer-tel" href="tel:+12135550123">+1 213 555-0123</a>
+            <a class="footer-tel" href="tel:+12135550125">+1 213 555-0125</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#header-top" class="button-up hidden" id="btnUp">&uarr;</a>
+    
+    <div class="modal" id="modal">
+      <nav class="nav _modal">
+        <a href="#" class="nav-link">Main</a>
+        <a href="#" class="nav-link">Menu</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contacts</a>
+      </nav>
+      <button class="modal-close" onclick="closeModal()"></button>
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
